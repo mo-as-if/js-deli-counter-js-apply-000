@@ -1,10 +1,13 @@
 var katzDeliLine = []; // empty array to be filled
+var counter = 0
 
 function takeANumber(katzDeliLine, name){
   katzDeliLine.push(name); // pushes new element to end of array.
   var spot = katzDeliLine.length
+  counter = counter++
   return `Welcome, ${name}. You are number ${spot} in line.`
 }
+
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length > 0) {
